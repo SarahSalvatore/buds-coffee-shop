@@ -1,6 +1,6 @@
 import React from "react";
 
-const menuLinks = ["coffee", "drinks", "food", "pastries"];
+const menuLinks = ["coffee", "tea", "drinks", "food", "pastries", "retail"];
 
 const Menu = () => {
   return (

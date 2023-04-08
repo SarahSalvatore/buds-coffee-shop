@@ -24,8 +24,6 @@ body {
 /* UNIVERSAL */
 
 .section-heading {
-  color: transparent;
-  -webkit-text-stroke: 0.5px var(--orange);
   font-size: 4rem;
   font-weight: 500;
   letter-spacing: 0.15rem;
@@ -42,7 +40,7 @@ body {
 }
 
 .paragraph-text {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 300;
   margin-bottom: 2rem;
   width: 70%;
@@ -98,6 +96,13 @@ nav {
 
 /* BANNER */
 
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner-heading {
   color: transparent;
   -webkit-text-stroke: 0.5px #fff;
@@ -106,13 +111,33 @@ nav {
   text-transform: uppercase;
 }
 
+button {
+  border: 2px solid var(--white);
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+  height: 45px;
+  transition: 1s;
+}
+
+button:hover {
+  border: 2px solid var(--orange);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--orange);
+}
+
 /* ABOUT */
 
 #about {
   background-color: var(--off-black);
   display: flex;
   flex-direction: row;
-  padding: 6rem 3rem;
+  padding: 7rem 0;
   height: 32dvw;
 }
 
@@ -138,7 +163,7 @@ nav {
 #menu {
   background-color: var(--off-black);
   height: 32dvw;
-  padding: 4rem 3rem;
+  padding: 7rem 0;
 }
 
 #menu h1 {

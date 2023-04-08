@@ -1,7 +1,8 @@
 const Banner = () => {
   return (
-    <section>
+    <section id="banner">
       <h1 className="banner-heading">Wake up and smell the coffee</h1>
+      <button className="white-text">Explore</button>
     </section>
   );
 };

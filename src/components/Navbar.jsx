@@ -14,7 +14,8 @@ const Navbar = () => {
             <Link
               className="nav-link"
               key={navLinks.indexOf(navItem)}
-              to={`${navItem}}`}
+              to={`${navItem}`}
+              smooth={true}
             >
               {navItem}
             </Link>

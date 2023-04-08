@@ -37,16 +37,16 @@ body {
   color: var(--white);
 }
 
-/* .orange-text {
+.orange-text {
   color: var(--orange);
-} */
+}
 
 .paragraph-text {
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  width: 80%;
-  line-height: 1.65;
+  width: 70%;
+  line-height: 1.8;
 }
 
 /* HEADER */
@@ -113,7 +113,7 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 6rem 3rem;
-  height: 30dvw;
+  height: 32dvw;
 }
 
 .about-photo-container {
@@ -137,7 +137,7 @@ nav {
 
 #menu {
   background-color: var(--off-black);
-  height: 30dvw;
+  height: 32dvw;
   padding: 4rem 3rem;
 }
 
@@ -161,4 +161,5 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  text-align: center;
 }

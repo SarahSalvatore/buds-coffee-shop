@@ -4,7 +4,7 @@ import Banner from "./Banner.jsx";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <Navbar />
       <Banner />
     </header>

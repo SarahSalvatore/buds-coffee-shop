@@ -16,14 +16,10 @@ const About = () => {
         <p className="paragraph-text white-text">
           Welcome to Bud's Coffee Bar! We are a locally owned coffee shop in the
           Beaches and offer a variety of drinks and snacks to satisfy any
-          craving. Our menu includes a wide selection of coffee drinks,
-          including lattes, cappuccinos, and mochas, as well as iced coffee and
-          cold brew. If you're feeling hungry, we have a selection of pastries
-          and other snacks available, including muffins, cookies, and
-          croissants. We are passionate about coffee and creating a welcoming
-          environment for all. We believe that a good cup of coffee can bring
-          people together, and we strive to make every cup an experience that
-          our customers will remember.
+          craving. Our menu includes a wide selection of coffee drinks, and if
+          you're feeling hungry, we have a selection of snacks and pastries
+          available. We believe that a good cup of coffee can bring people
+          together, and we strive to create a welcoming environment for all.
         </p>
       </div>
     </section>

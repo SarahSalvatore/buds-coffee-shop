@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +9,44 @@
 :root {
   --white: white;
   --black: black;
+  --off-black: #131210f7;
+  --orange: #ff8b3d;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* UNIVERSAL */
+
+.section-heading {
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--orange);
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.white-text {
+  color: var(--white);
+}
+
+/* .orange-text {
+  color: var(--orange);
+} */
+
+.paragraph-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  width: 80%;
+  line-height: 1.65;
 }
 
 /* HEADER */
@@ -19,26 +55,110 @@ header {
   background-image: url("./assets/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100dvh;
 }
 
 /* NAV */
 
 nav {
-  background-color: rgba(var(--black), 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
+  padding: 1rem 2rem;
   width: 100%;
   z-index: 100;
 }
 
+.nav-logo {
+  width: 70px;
+  opacity: 0.8;
+}
+
 .nav-link {
   color: var(--white);
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 0 1.5rem;
+  transition: 0.9s;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+/* BANNER */
+
+.banner-heading {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  font-size: 8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: var(--off-black);
+  display: flex;
+  flex-direction: row;
+  padding: 6rem 3rem;
+  height: 30dvw;
+}
+
+.about-photo-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50dvw;
+}
+
+.about-photo {
+  border-radius: 2px;
+  max-width: 70%;
+  margin-right: 3rem;
+}
+
+.about-text-container {
+  width: 50dvw;
+  margin-left: 2rem;
+}
+
+/* MENU */
+
+#menu {
+  background-color: var(--off-black);
+  height: 30dvw;
+  padding: 4rem 3rem;
+}
+
+#menu h1 {
+  text-align: center;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: var(--black);
+  background-color: var(--off-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }

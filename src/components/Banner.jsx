@@ -1,5 +1,9 @@
 const Banner = () => {
-  return <section>Banner</section>;
+  return (
+    <section>
+      <h1 className="banner-heading">Wake up and smell the coffee</h1>
+    </section>
+  );
 };
 
 export default Banner;

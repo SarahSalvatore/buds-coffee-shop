@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import Logo from "./Logo";
 import { Link } from "react-scroll";
 
 const navLinks = ["home", "about", "menu", "contact"];
@@ -7,12 +7,12 @@ const navLinks = ["home", "about", "menu", "contact"];
 const Navbar = () => {
   return (
     <nav>
-      <img className="nav-logo" src={logo} alt="Buds Coffee Bar logo" />
+      <Logo />
       <div>
         {navLinks.map((navItem) => {
           return (
             <Link
-              className="nav-link"
+              className="nav-link white-text"
               key={navLinks.indexOf(navItem)}
               to={`${navItem}`}
               smooth={true}

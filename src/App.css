@@ -10,6 +10,7 @@
   --white: white;
   --black: black;
   --off-black: #131210f7;
+  --dark-off-black: #131210;
   --orange: #ff8b3d;
 }
 
@@ -77,12 +78,12 @@ nav {
 }
 
 .nav-logo {
+  cursor: pointer;
   width: 70px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .nav-link {
-  color: var(--white);
   cursor: pointer;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -105,26 +106,31 @@ nav {
 
 .banner-heading {
   color: transparent;
-  -webkit-text-stroke: 0.5px #fff;
+  -webkit-text-stroke: 1px #fff;
   font-size: 8rem;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 
+.banner-link,
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--white);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   font-size: 1.7rem;
   font-weight: 400;
   margin-top: 3rem;
-  text-align: center;
   text-transform: uppercase;
   width: 200px;
   height: 45px;
   transition: 1s;
 }
 
+.banner-link:hover,
 button:hover {
   border: 2px solid var(--orange);
   background-color: rgba(0, 0, 0, 0.6);
@@ -133,15 +139,20 @@ button:hover {
 
 /* ABOUT */
 
-#about {
+#about,
+#contact {
   background-color: var(--off-black);
   display: flex;
   flex-direction: row;
-  padding: 7rem 0;
-  height: 32dvw;
+  padding: 10rem 0;
 }
 
-.about-photo-container {
+#about {
+  height: 650px;
+}
+
+.about-photo-container,
+.contact-form-container {
   display: flex;
   justify-content: flex-end;
   width: 50dvw;
@@ -153,20 +164,63 @@ button:hover {
   margin-right: 3rem;
 }
 
-.about-text-container {
+.about-text-container,
+.contact-text-container {
   width: 50dvw;
   margin-left: 2rem;
+}
+
+.text-link {
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  transition: 0.9s;
+}
+
+.text-link:hover {
+  color: var(--white);
+}
+
+.cup-photo {
+  margin-right: 1rem;
+}
+
+.about-image-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* PHOTO SECTION */
+
+.photo-section {
+  background-image: url("./assets/closeup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35dvh;
+  max-width: 100dvw;
+}
+
+.photo-section-text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 4rem;
+  opacity: 0.9;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 /* MENU */
 
 #menu {
   background-color: var(--off-black);
-  height: 32dvw;
-  padding: 7rem 0;
+  height: 750px;
+  padding: 10rem 0 7rem;
 }
 
-#menu h1 {
+#menu h2 {
   text-align: center;
 }
 
@@ -177,10 +231,109 @@ button:hover {
   justify-content: center;
 }
 
+.menu-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+/* MENU SECTION */
+
+.menu-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+
+.menu-title-price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu-item-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.menu-item-price {
+  font-size: 1.4rem;
+}
+
+.menu-hr {
+  margin: 0.2rem auto 1.5rem;
+  width: 500px;
+}
+
+/* CONTACT */
+
+.contact-photo-section {
+  background-image: url("./assets/art.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35dvh;
+  max-width: 100dvw;
+}
+
+form {
+  background-color: var(--dark-off-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 3rem;
+  margin-right: 3rem;
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+}
+
+form button {
+  margin: 0 auto;
+}
+
+.hours-container {
+  width: 300px;
+}
+
+.small-heading {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.hours-item {
+  color: var(--white);
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hours-hr {
+  width: 100%;
+  margin: 0 auto 1.2rem;
+}
+
 /* FOOTER */
 
 footer {
-  background-color: var(--off-black);
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   align-items: center;

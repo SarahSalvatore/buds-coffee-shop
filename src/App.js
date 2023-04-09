@@ -13,9 +13,13 @@ function App() {
       <Header />
       <main>
         <About />
-        <Photo />
+        <Photo
+          sectionClassName="photo-section"
+          text="come and get your coffee fix"
+        />
         <Menu />
         <SocialFeed />
+        <Photo sectionClassName="contact-photo-section" />
         <Contact />
       </main>
       <Footer />

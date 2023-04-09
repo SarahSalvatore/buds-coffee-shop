@@ -95,6 +95,28 @@ nav {
   color: var(--orange);
 }
 
+.nav-button {
+  background-color: transparent;
+  border: 2px solid var(--orange);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  width: 120px;
+  height: 35px;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
+  transition: 0.8s;
+}
+
+.nav-button:hover {
+  background-color: var(--orange);
+}
+
 /* BANNER */
 
 #banner {
@@ -114,7 +136,8 @@ nav {
 }
 
 .banner-link,
-button {
+.form-button,
+.photo-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +154,8 @@ button {
 }
 
 .banner-link:hover,
-button:hover {
+.form-button:hover,
+.photo-button:hover {
   border: 2px solid var(--orange);
   background-color: rgba(0, 0, 0, 0.6);
   color: var(--orange);
@@ -272,9 +296,14 @@ button:hover {
 /* CONTACT */
 
 .contact-photo-section {
-  background-image: url("./assets/art.jpg");
+  background-image: url("./assets/closeup.jpg");
+  /* background-image: url("./assets/art.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 35dvh;
   max-width: 100dvw;
 }

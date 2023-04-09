@@ -39,7 +39,7 @@ const ContactForm = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button className="white-text" type="submit">
+      <button className="form-button white-text" type="submit">
         Send
       </button>
     </form>

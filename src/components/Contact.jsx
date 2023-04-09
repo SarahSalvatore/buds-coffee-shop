@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="hours-container">
           {hours.map((weekday) => {
             return (
-              <div>
+              <div key={weekday.id}>
                 <div className="hours-item">
                   <p>{weekday.day}</p>
                   <p>{weekday.times}</p>

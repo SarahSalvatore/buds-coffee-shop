@@ -12,6 +12,7 @@
   --off-black: #131210f7;
   --dark-off-black: #131210;
   --orange: #ff8b3d;
+  --red: #d93131;
 }
 
 html {
@@ -105,7 +106,7 @@ nav {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
-  width: 120px;
+  width: 140px;
   height: 35px;
   margin-left: 2rem;
   text-transform: uppercase;
@@ -297,7 +298,6 @@ nav {
 
 .contact-photo-section {
   background-image: url("./assets/closeup.jpg");
-  /* background-image: url("./assets/art.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -357,6 +357,13 @@ form button {
 .hours-hr {
   width: 100%;
   margin: 0 auto 1.2rem;
+}
+
+.error-span {
+  color: var(--red);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 /* MAP */

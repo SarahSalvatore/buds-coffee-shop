@@ -1,0 +1,9 @@
+Favicon
+Footer
+Responsiveness and Hamburger Menu
+Form error handling
+Instagram API
+Emailjs API
+Deploy
+Font Awesome icons for Facebook, Instagram and location
+Link to Ritual / Order button on navbar

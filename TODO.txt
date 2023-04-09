@@ -1,7 +1,4 @@
 Favicon
-Footer
 Responsiveness and Hamburger Menu
-Form error handling
 Emailjs API
 Deploy
-Font Awesome icons for Facebook, Instagram and location

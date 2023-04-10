@@ -125,6 +125,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 3rem;
 }
 
 .banner-heading {
@@ -185,8 +186,9 @@ nav {
 
 .about-photo {
   border-radius: 2px;
-  max-width: 70%;
+  max-width: 80%;
   margin-right: 3rem;
+  object-fit: cover;
 }
 
 .about-text-container,
@@ -287,6 +289,7 @@ nav {
 
 .menu-item-price {
   font-size: 1.4rem;
+  text-align: right;
 }
 
 .menu-hr {
@@ -434,4 +437,234 @@ footer {
   font-weight: 500;
   font-size: 1.5rem;
   margin: 0.5rem auto 1rem;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1200px) {
+  form,
+  .thank-you-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .paragraph-text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-text-container {
+    width: 40dvw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #banner {
+    margin-top: 10rem;
+  }
+
+  .about-photo {
+    max-width: 85%;
+  }
+
+  .paragraph-text,
+  .hours-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .paragraph-text,
+  .hours-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #about,
+  #contact {
+    flex-direction: column;
+  }
+
+  #about,
+  #contact,
+  #menu {
+    padding: 6rem 1rem;
+  }
+
+  #about {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact {
+    flex-direction: column-reverse;
+  }
+
+  .about-photo-container,
+  .about-text-container,
+  .contact-text-container,
+  .contact-form-container,
+  .thank-you-container {
+    width: 90%;
+  }
+
+  .about-photo-container {
+    justify-content: center;
+  }
+
+  .about-text-container {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .about-photo {
+    margin-right: 0;
+  }
+
+  .contact-text-container,
+  .about-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-text-container {
+    margin-bottom: 2rem;
+  }
+
+  .paragraph-text {
+    text-align: center;
+  }
+
+  .hours-container {
+    width: 75%;
+    margin-bottom: 2rem;
+  }
+
+  footer .nav-logo {
+    width: 50px;
+  }
+}
+
+/* HAMBURGER IMPLEMENTED */
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 550px) {
+  #menu,
+  #contact {
+    padding-top: 4rem;
+  }
+
+  .menu-section-container {
+    width: 90%;
+  }
+
+  .menu-item-container,
+  .menu-hr {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .contact-text-container {
+    margin-left: 0;
+  }
+
+  form,
+  .thank-you-container {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #banner {
+    margin-top: 7rem;
+  }
+
+  .banner-heading {
+    font-size: 7rem;
+  }
+
+  .photo-section-text {
+    font-size: 3.6rem;
+  }
+
+  #menu {
+    height: 800px;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list .nav-link {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner-heading {
+    font-size: 6rem;
+  }
+
+  .paragraph-text {
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .photo-section-text {
+    font-size: 3.2rem;
+  }
+
+  .menu-item-title {
+    font-size: 1.4rem;
+  }
+
+  .menu-item-price {
+    font-size: 1.2rem;
+  }
+
+  .contact-text-container {
+    width: 95%;
+  }
+
+  .hours-container {
+    width: 85%;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  .form-button {
+    margin-top: 1rem;
+  }
 }

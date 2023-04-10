@@ -1,3 +1,2 @@
 Responsiveness and Hamburger Menu
-Emailjs API
 Deploy

@@ -2,6 +2,8 @@
 
 ![Project Image](public/readMe.jpg)
 
+[Demo](https://buds-coffee.netlify.app/)
+
 Bud's Coffee Bar is a single-page web application (SPA) built with React. It features an about section, a menu section, a map section, and a contact section. The map is displayed using the Google Maps Embed API, and the contact forms are sent using EmailJS.
 
 ## Usage

@@ -1,2 +1,0 @@
-Responsiveness and Hamburger Menu
-Deploy

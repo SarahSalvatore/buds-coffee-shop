@@ -308,6 +308,30 @@ nav {
   max-width: 100dvw;
 }
 
+.thank-you-container {
+  background-color: var(--dark-off-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 3rem;
+  margin-right: 3rem;
+}
+
+.thank-you-heading {
+  -webkit-text-stroke: 0.8px #fff;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.thank-you-text {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
 form {
   background-color: var(--dark-off-black);
   border-radius: 10px;

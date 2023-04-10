@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactForm from "./ContactForm";
+import FormSubmission from "./FormSubmission";
 import hours from "../data/hours";
 
 const Contact = () => {
+  const [submittedForm, setSubmittedForm] = useState(false);
+
   return (
     <section id="contact">
       <div className="contact-form-container">
-        <ContactForm />
+        {submittedForm ? <FormSubmission /> : <ContactForm />}
       </div>
       <div className="contact-text-container">
         <h2 className="section-heading orange-text">Contact</h2>

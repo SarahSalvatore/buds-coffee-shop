@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validateForm } from "../data/formValidation";
 
-const ContactForm = () => {
+const ContactForm = ({ submission }) => {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -24,7 +24,7 @@ const ContactForm = () => {
     const errors = validateForm(formValues);
     setFormErrors(errors);
     if (!Object.values(errors).some((error) => error)) {
-      console.log("Submitted");
+      submission(true);
     }
   };
 

@@ -6,10 +6,18 @@ import hours from "../data/hours";
 const Contact = () => {
   const [submittedForm, setSubmittedForm] = useState(false);
 
+  const changeDisplayOnSubmit = (submitted) => {
+    setSubmittedForm(submitted);
+  };
+
   return (
     <section id="contact">
       <div className="contact-form-container">
-        {submittedForm ? <FormSubmission /> : <ContactForm />}
+        {submittedForm ? (
+          <FormSubmission />
+        ) : (
+          <ContactForm submission={changeDisplayOnSubmit} />
+        )}
       </div>
       <div className="contact-text-container">
         <h2 className="section-heading orange-text">Contact</h2>

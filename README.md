@@ -6,7 +6,7 @@ Bud's Coffee Bar is a single-page web application (SPA) built with React. It fea
 
 ## Usage
 
-To start the application, run npm start in the project directory. The application should open in your default web browser at http://localhost:3000.
+To start the application, run npm install and then npm start in the project directory. The application should open in your default web browser at http://localhost:3000.
 
 ## Navigation
 

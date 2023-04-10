@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { validateForm } from "../data/formValidation";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = ({ submission }) => {
+  const form = useRef();
+
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -24,12 +27,26 @@ const ContactForm = ({ submission }) => {
     const errors = validateForm(formValues);
     setFormErrors(errors);
     if (!Object.values(errors).some((error) => error)) {
-      submission(true);
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            submission(true);
+          },
+          (error) => {
+            console.error(error.text);
+          }
+        );
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit}>
       {formErrors.name && <span className="error-span">{formErrors.name}</span>}
       <input
         type="text"

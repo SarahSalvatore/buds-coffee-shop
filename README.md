@@ -26,7 +26,7 @@ The map section shows the location of Bud's Coffee Bar on a map using the Google
 
 The contact section allows users to send a message to Bud's Coffee Bar using a contact form. The form is validated using React and powered by EmailJS, which sends the message to a designated email address.
 
-### Dependencies
+## Dependencies
 
 The application has the following dependencies:
 
@@ -39,6 +39,6 @@ Google Maps Embed API
 
 These dependencies are listed in the package.json file and are installed automatically when you run npm install.
 
-### Author
+## Author
 
 The site was designed and built by Sarah Salvatore.
